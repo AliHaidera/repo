@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'pfour/base.html' %}
+
+{% block body-block %}
+
+
+<form  method="post">
+  {{user1.as_p}}
+  {%csrf_token%}
+  <input type="submit" class="btn btn-primary"  value="submit">
+
+</form>
+
+
+{% endblock %}
